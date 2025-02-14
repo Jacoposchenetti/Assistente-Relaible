@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Voiceflow Chat Widget</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voiceflow Web Chat</title>
 </head>
 <body>
-  <h1>Benvenuto al mio Widget Voiceflow</h1>
+    <div id="webchat"></div>
+    <script>
+        // Replace 'YOUR_PROJECT_ID' with your actual project ID
+        const projectID = '67afb110d7ad2f8adf95ee0a';
 
-  <!-- Voiceflow Chat Widget -->
-  <script>
-    window.Voiceflow = window.Voiceflow || {};
-    Voiceflow.init({
-      projectID: "67afb110d7ad2f8adf95ee0a"
-    });
-  </script>
-  <script src="https://cdn.voiceflow.com/widget/bundle.min.js"></script>
+        // Load the Voiceflow web chat widget
+        (function() {
+            const script = document.createElement('script');
+            script.src = `https://webchat.voiceflow.com/v1/${projectID}/bundle.js`;
+            script.async = true;
+            document.head.appendChild(script);
+        })();
+    </script>
 </body>
 </html>
