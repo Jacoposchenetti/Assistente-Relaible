@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voiceflow Chat Widget</title>
+</head>
+<body>
+  <h1>Benvenuto al mio Widget Voiceflow</h1>
+
+  <!-- Voiceflow Chat Widget -->
+  <script>
+    window.Voiceflow = window.Voiceflow || {};
+    Voiceflow.init({
+      projectID: "67afb110d7ad2f8adf95ee0a"
+    });
+  </script>
+  <script src="https://cdn.voiceflow.com/widget/bundle.min.js"></script>
+</body>
+</html>
